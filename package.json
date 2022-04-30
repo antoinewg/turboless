@@ -1,10 +1,10 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "turbo-serverless-typescript-starter",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/*",
+    "services/*"
   ],
   "scripts": {
     "build": "turbo run build",
