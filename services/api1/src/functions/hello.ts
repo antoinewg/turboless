@@ -10,9 +10,9 @@ interface HeaderOption {
   "Access-Control-Allow-Origin": string;
 }
 
-export const main = async (
-  event: APIGatewayProxyEvent
-): Promise<LambdaResponse> => {
+export const handler = async (_event: APIGatewayProxyEvent): Promise<LambdaResponse> => {
+  await new Promise((res) => setTimeout(res, 500))
+
   return {
     headers: {
       "Access-Control-Allow-Origin": "*",

@@ -1,0 +1,24 @@
+service: api1
+
+frameworkVersion: '3.16'
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-central-1
+
+functions:
+  hello:
+    handler: src/functions/hello.handler
+    description: Lambda function to say hello
+    memorySize: 256
+    events:
+      - http:
+          path: /hello
+          method: get
+          cors: true

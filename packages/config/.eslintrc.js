@@ -28,7 +28,7 @@ module.exports = {
       }
     ],
     "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/semi": "warn",
@@ -44,26 +44,7 @@ module.exports = {
     "semi": "off",
     "no-empty": "warn",
     "no-unused-expressions": ["error", { "allowTernary": true }],
-    "no-use-before-define": "off",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      { "selector": "variableLike", "format": ["camelCase"] },
-      {
-        "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
-      },
-      {
-        "selector": "variable",
-        "types": ["boolean"],
-        "format": ["PascalCase"],
-        "prefix": ["is", "should", "has", "can", "did", "will"]
-      },
-      {
-        "selector": "typeParameter",
-        "format": ["PascalCase"],
-        "prefix": ["T"]
-      }
-    ]
+    "no-use-before-define": "off"
   },
   "ignorePatterns": [
     "./package.json",
