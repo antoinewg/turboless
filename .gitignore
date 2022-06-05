@@ -29,3 +29,4 @@ yarn-error.log*
 
 # serverless 
 .build
+.serverless

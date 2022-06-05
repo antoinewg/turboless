@@ -13,6 +13,9 @@
     "test": {
       "outputs": []
     },
+    "package": {
+      "outputs": []
+    },
     "dev": {
       "cache": false
     }

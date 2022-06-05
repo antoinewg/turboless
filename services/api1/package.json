@@ -9,7 +9,8 @@
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch --coverage",
     "lint": "eslint '**/*.ts'",
-    "lint:fix": "eslint '**/*.ts' --fix"
+    "lint:fix": "eslint '**/*.ts' --fix",
+    "package": "serverless package"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.18.0",
