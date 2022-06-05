@@ -1,0 +1,15 @@
+{
+  "name": "helpers",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "dependencies": {
+    "@middy/core": "^3.0.4",
+    "@middy/http-json-body-parser": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.98",
+    "json-schema-to-ts": "^2.5.3"
+  }
+}

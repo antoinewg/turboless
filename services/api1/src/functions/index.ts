@@ -1,5 +1,7 @@
 import type { AWS } from '@serverless/typescript';
 
+import schema from './hello/schema';
+
 export const functions: AWS['functions'] = {
   hello: {
     handler: "src/functions/hello/handler.main",
@@ -8,9 +10,14 @@ export const functions: AWS['functions'] = {
     events: [
       {
         http: {
-          method: 'get',
-          path: '/hello',
-          cors: true
+          method: 'post',
+          path: 'hello',
+          cors: true,
+          request: {
+            schemas: {
+              'application/json': schema,
+            },
+          },
         },
       },
     ],

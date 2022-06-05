@@ -10,6 +10,9 @@
     "lint:fix": {
       "outputs": []
     },
+    "test": {
+      "outputs": []
+    },
     "dev": {
       "cache": false
     }

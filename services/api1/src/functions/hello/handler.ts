@@ -1,13 +1,12 @@
-import type { APIGatewayProxyHandler } from "aws-lambda";
+import type { ValidatedAPIGatewayProxyEvent } from "helpers";
+import { middyfy,formatJSONResponse } from "helpers";
 
-export const main: APIGatewayProxyHandler = async () => {
-  await new Promise((res) => setTimeout(res, 500));
+import schema from './schema';
 
-  return {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
-    statusCode: 200,
-    body: JSON.stringify("Lambda is alive!"),
-  };
+const hello = async (event: ValidatedAPIGatewayProxyEvent<typeof schema>) => {
+  return formatJSONResponse({
+    message: `Hello ${event.body.name} !`
+  });
 };
+
+export const main = middyfy(hello);
