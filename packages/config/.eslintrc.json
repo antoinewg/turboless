@@ -1,9 +1,6 @@
-module.exports = {
+{
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
   "extends": [
     "plugin:you-dont-need-lodash-underscore/compatible",
     "eslint:recommended",
