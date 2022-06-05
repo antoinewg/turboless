@@ -1,0 +1,26 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.2
+workflows:
+  test:
+    jobs:
+      - test
+jobs:
+  test:
+    docker:
+      - image: cimg/node:lts
+    # To use Remote Caching, uncomment the next lines and follow the steps below.
+    # environment:
+    #  TURBO_TOKEN: $TURBO_TOKEN
+    #  TURBO_TEAM: $TURBO_TEAM
+    steps:
+      - checkout
+      - node/install-packages:
+      - run:
+        command: npm i -g pnpm
+      - run:
+        command: pnpm i
+      - run:
+        command: pnpm build
+      - run:
+        command: pnpm test

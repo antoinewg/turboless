@@ -19,7 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "removeComments": true,
     "resolveJsonModule": true,
-    "declaration": true,
+    "declaration": false,
     "strictNullChecks": true
   },
   "include": ["./src"],

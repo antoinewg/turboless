@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "prettier": "latest",
@@ -21,5 +22,5 @@
     "npm": ">=8.0.0",
     "node": ">=16.0.0"
   },
-  "packageManager": "pnpm@7.0.0-rc.9"
+  "packageManager": "pnpm@7.1.8"
 }
