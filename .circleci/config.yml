@@ -15,12 +15,15 @@ jobs:
     #  TURBO_TEAM: $TURBO_TEAM
     steps:
       - checkout
-      - node/install-packages:
       - run:
-        command: npm i -g pnpm
+          name: Install pnpm
+          command: npm i -g pnpm
       - run:
-        command: pnpm i
+          name: Install dependencies
+          command: pnpm i
       - run:
-        command: pnpm build
+          name: Run linter
+          command: pnpm run lint
       - run:
-        command: pnpm test
+          name: Run tests
+          command: pnpm run test
