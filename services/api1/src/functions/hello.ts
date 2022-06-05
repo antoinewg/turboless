@@ -1,16 +1,6 @@
-import { APIGatewayProxyEvent } from "aws-lambda";
+import type { APIGatewayProxyHandler } from "aws-lambda";
 
-type LambdaResponse = {
-  headers: HeaderOption;
-  statusCode: number;
-  body: string;
-};
-
-interface HeaderOption {
-  "Access-Control-Allow-Origin": string;
-}
-
-export const handler = async (_event: APIGatewayProxyEvent): Promise<LambdaResponse> => {
+export const handler: APIGatewayProxyHandler = async () => {
   await new Promise((res) => setTimeout(res, 500))
 
   return {
