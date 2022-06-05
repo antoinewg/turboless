@@ -1,7 +1,7 @@
 import type { APIGatewayProxyHandler } from "aws-lambda";
 
-export const handler: APIGatewayProxyHandler = async () => {
-  await new Promise((res) => setTimeout(res, 500))
+export const main: APIGatewayProxyHandler = async () => {
+  await new Promise((res) => setTimeout(res, 500));
 
   return {
     headers: {

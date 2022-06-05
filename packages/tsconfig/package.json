@@ -3,5 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
-  "files": ["base.json"]
+  "files": [
+    "base.json"
+  ],
+  "devDependencies": {
+    "tsconfig-paths": "^4.0.0"
+  }
 }
