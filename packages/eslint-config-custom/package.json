@@ -1,18 +1,19 @@
 {
-  "name": "config",
+  "name": "eslint-config-custom",
   "version": "1.0.0",
-  "files": [
-    ".eslintrc.json"
-  ],
-  "devDependencies": {
+  "main": "index.js",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint": "^8.14.0",
     "eslint-plugin-jest": "^26.1.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-security": "^1.5.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
-    "jest": "^28.0.3",
     "typescript": "^4.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

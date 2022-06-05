@@ -8,7 +8,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 ### Packages
 
-- `config`: `eslint` configurations (includes `eslint-config-prettier`)
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package is 100% [TypeScript](https://www.typescriptlang.org/).
