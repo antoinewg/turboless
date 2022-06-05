@@ -1,4 +1,4 @@
-# Turborepo starter with pnpm
+# Turborepo starter with pnpm for serverless
 
 This is an unofficial starter turborepo for serverless + typescript.
 
