@@ -46,3 +46,10 @@ pnpm run dev
 ### Remote Caching
 
 See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching) for more info.
+
+## Get started
+
+- clone this repo, or use it as template.
+- install [pnpm](https://pnpm.io/installation) for package management.
+- install the dependencies: `pnpm i`.
+- build and run the services: `pnpm run build && pnpm run dev`.
