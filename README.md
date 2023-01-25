@@ -16,6 +16,7 @@ Each package is 100% [TypeScript](https://www.typescriptlang.org/).
 ### Services
 
 - `api1`: serverless service to say hello. Run `pnpm dev` to run the offline in offline mode.
+- `api2`: serverless service to say ciao. Run `pnpm dev` to run the offline in offline mode.
 
 ### Utilities
 
@@ -54,3 +55,16 @@ See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-cach
 - install [pnpm](https://pnpm.io/installation) for package management.
 - install the dependencies: `pnpm i`.
 - build and run the services: `pnpm run build && pnpm run dev`.
+- send first request:
+
+```bash
+curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}
+> {"message":"Hello World !"}
+
+curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" -d '{"name": "World"}
+> {"message":"Ciao World !"}
+```
+
+## Inspiration
+
+[Initial issue](https://github.com/vercel/turbo/issues/221).
