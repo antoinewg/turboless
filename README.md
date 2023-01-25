@@ -54,3 +54,9 @@ See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-cach
 - install [pnpm](https://pnpm.io/installation) for package management.
 - install the dependencies: `pnpm i`.
 - build and run the services: `pnpm run build && pnpm run dev`.
+- send first request:
+
+```bash
+curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}
+> {"message":"Hello World !"}
+```
