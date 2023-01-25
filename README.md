@@ -16,6 +16,7 @@ Each package is 100% [TypeScript](https://www.typescriptlang.org/).
 ### Services
 
 - `api1`: serverless service to say hello. Run `pnpm dev` to run the offline in offline mode.
+- `api2`: serverless service to say ciao. Run `pnpm dev` to run the offline in offline mode.
 
 ### Utilities
 

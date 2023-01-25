@@ -1,5 +1,6 @@
 {
   "eslint.workingDirectories": [
     "./services/api1",
+    "./services/api2",
   ]
 }
