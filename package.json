@@ -16,8 +16,12 @@
     "package": "turbo run package"
   },
   "devDependencies": {
+    "esbuild": "^0.14.42",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
+    "serverless": "^3.19.0",
+    "serverless-esbuild": "^1.30.0",
+    "serverless-offline": "^8.8.0",
     "turbo": "latest"
   },
   "engines": {
