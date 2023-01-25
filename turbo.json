@@ -23,7 +23,7 @@
     "dev": {
       "cache": false
     },
-    "deploy": {
+    "package": {
       "dependsOn": [
         "build",
         "test",
