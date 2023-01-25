@@ -60,3 +60,7 @@ See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-cach
 curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}
 > {"message":"Hello World !"}
 ```
+
+## Inspiration
+
+[Initial issue](https://github.com/vercel/turbo/issues/221).
