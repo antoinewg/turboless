@@ -4,7 +4,7 @@ import { functions as hello } from "@functions/index";
 
 const serverlessConfiguration: AWS = {
   service: "api1",
-  frameworkVersion: "3.19",
+  frameworkVersion: "3.28.1",
   plugins: ["serverless-esbuild", "serverless-offline"],
   provider: {
     name: "aws",
