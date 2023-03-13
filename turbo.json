@@ -21,6 +21,8 @@
     "test:watch": {},
     "lint": {},
     "lint:fix": {},
+    "check:updates": {},
+    "check:updates:u": {},
     "dev": {
       "cache": false
     },

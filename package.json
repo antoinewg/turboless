@@ -14,6 +14,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
+    "check:updates": "turbo run check:updates",
+    "check:updates:u": "turbo run check:updates:u",
     "package": "turbo run package"
   },
   "devDependencies": {

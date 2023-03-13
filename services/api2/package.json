@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "serverless offline start",
+    "check:updates": "npx npm-check-updates",
+    "check:updates:u": "npx npm-check-updates -u && pnpm i",
     "deploy:staging": "serverless deploy --aws-profile personal --stage staging",
     "deploy:production": "serverless deploy --aws-profile personal --stage production",
     "test": "vitest run --coverage --passWithNoTests",

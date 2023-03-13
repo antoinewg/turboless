@@ -5,6 +5,8 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
+    "check:updates": "npx npm-check-updates",
+    "check:updates:u": "npx npm-check-updates -u && pnpm i",
     "test": "vitest run --coverage",
     "test:watch": "vitest"
   },

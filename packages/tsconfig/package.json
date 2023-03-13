@@ -6,6 +6,10 @@
   "files": [
     "base.json"
   ],
+  "scripts": {
+    "check:updates": "npx npm-check-updates",
+    "check:updates:u": "npx npm-check-updates -u && pnpm i"
+  },
   "devDependencies": {
     "tsconfig-paths": "^4.1.2"
   }
