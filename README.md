@@ -60,6 +60,21 @@ pnpm test       # to run the tests, with coverage
 pnpm test:watch # to run tests in watch mode
 ```
 
+## Deployment
+
+Make sure to have `AWS_PROFILE` set up to the aws profile you want to deploy with. Otherwise the command will fail.
+Run `aws configure list-profiles` to see your profiles available.
+
+This template simulates two environments (staging and production):
+
+```bash
+cd my-turborepo
+AWS_PROFILE=<aws_profile> pnpm deploy:staging
+AWS_PROFILE=<aws_profile> pnpm deploy:production
+```
+
+⚠️ Running this command will deploy to AWS. Please make sure this is what you intend and beware of unintentional usage.
+
 ### Remote Caching
 
 See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching) for more info.

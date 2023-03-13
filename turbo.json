@@ -33,6 +33,18 @@
         "lint"
       ],
       "cache": false
+    },
+    "deploy:staging": {
+      "dependsOn": [
+        "package"
+      ],
+      "cache": false
+    },
+    "deploy:production": {
+      "dependsOn": [
+        "package"
+      ],
+      "cache": false
     }
   }
 }
