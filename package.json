@@ -16,17 +16,25 @@
     "package": "turbo run package"
   },
   "devDependencies": {
-    "esbuild": "^0.14.42",
+    "@serverless/typescript": "^3.27.0",
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.15.1",
+    "esbuild": "^0.17.11",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
-    "serverless": "^3.19.0",
-    "serverless-esbuild": "^1.30.0",
-    "serverless-offline": "^8.8.0",
-    "turbo": "latest"
+    "serverless": "^3.28.1",
+    "serverless-esbuild": "^1.39.0",
+    "serverless-offline": "^12.0.4",
+    "ts-node": "^10.9.1",
+    "turbo": "latest",
+    "typescript": "^4.9.5"
   },
   "engines": {
     "npm": ">=8.0.0",
     "node": ">=16.0.0"
   },
-  "packageManager": "pnpm@7.25.1"
+  "packageManager": "pnpm@7.29.1",
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  }
 }

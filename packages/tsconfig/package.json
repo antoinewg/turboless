@@ -7,6 +7,6 @@
     "base.json"
   ],
   "devDependencies": {
-    "tsconfig-paths": "^4.0.0"
+    "tsconfig-paths": "^4.1.2"
   }
 }
