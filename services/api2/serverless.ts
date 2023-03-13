@@ -4,7 +4,7 @@ import { functions as ciao } from "@functions/index";
 
 const serverlessConfiguration: AWS = {
   service: "api2",
-  frameworkVersion: "3.19",
+  frameworkVersion: "3.28.1",
   plugins: ["serverless-esbuild", "serverless-offline"],
   provider: {
     name: "aws",
@@ -29,9 +29,9 @@ const serverlessConfiguration: AWS = {
       platform: "node",
       concurrency: 10,
     },
-    'serverless-offline': {
+    "serverless-offline": {
       httpPort: 4000,
-      lambdaPort: 4002
+      lambdaPort: 4002,
     },
   },
 };

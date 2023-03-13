@@ -1,5 +1,5 @@
 {
-  "name": "turbo-serverless-typescript-starter",
+  "name": "turboless",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -13,16 +13,33 @@
     "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "check:updates": "turbo run check:updates",
+    "check:updates:u": "turbo run check:updates:u",
     "package": "turbo run package"
   },
   "devDependencies": {
+    "@serverless/typescript": "^3.27.0",
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.15.1",
+    "@vitest/coverage-c8": "^0.29.2",
+    "esbuild": "^0.17.11",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
-    "turbo": "latest"
+    "serverless": "^3.28.1",
+    "serverless-esbuild": "^1.39.0",
+    "serverless-offline": "^12.0.4",
+    "ts-node": "^10.9.1",
+    "turbo": "latest",
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.2"
   },
   "engines": {
     "npm": ">=8.0.0",
     "node": ">=16.0.0"
   },
-  "packageManager": "pnpm@7.25.1"
+  "packageManager": "pnpm@7.29.1",
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  }
 }

@@ -4,31 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "serverless offline start",
+    "check:updates": "npx npm-check-updates",
+    "check:updates:u": "npx npm-check-updates -u && pnpm i",
     "deploy:staging": "serverless deploy --aws-profile personal --stage staging",
     "deploy:production": "serverless deploy --aws-profile personal --stage production",
-    "test": "jest --passWithNoTests",
-    "test:watch": "jest --watch --coverage",
+    "test": "vitest run --coverage --passWithNoTests",
+    "test:watch": "vitest --passWithNoTests",
     "lint": "eslint '**/*.ts'",
     "lint:fix": "eslint '**/*.ts' --fix",
     "package": "serverless package"
   },
   "devDependencies": {
-    "@serverless/typescript": "^3.18.0",
-    "@types/aws-lambda": "^8.10.98",
-    "@types/node": "^17.0.40",
-    "esbuild": "^0.14.42",
-    "eslint": "^8.14.0",
-    "jest": "^28.0.3",
-    "serverless": "^3.19.0",
-    "serverless-esbuild": "^1.30.0",
-    "serverless-offline": "^8.8.0",
-    "ts-node": "^10.8.1",
-    "tsconfig": "workspace:*",
-    "tsconfig-paths": "^4.0.0",
-    "typescript": "^4.7.3"
+    "eslint": "^8.36.0",
+    "tsconfig": "workspace:*"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.7",
     "helpers": "workspace:*"
   }
 }

@@ -4,12 +4,18 @@
   "private": true,
   "main": "index.ts",
   "types": "index.ts",
+  "scripts": {
+    "check:updates": "npx npm-check-updates",
+    "check:updates:u": "npx npm-check-updates -u && pnpm i",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
   "dependencies": {
-    "@middy/core": "^3.0.4",
-    "@middy/http-json-body-parser": "^3.0.4"
+    "@middy/core": "^4.2.6",
+    "@middy/http-json-body-parser": "^4.2.6"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.98",
-    "json-schema-to-ts": "^2.5.3"
+    "@types/aws-lambda": "^8.10.111",
+    "json-schema-to-ts": "^2.7.2"
   }
 }
