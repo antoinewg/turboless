@@ -75,6 +75,10 @@ AWS_PROFILE=<aws_profile> pnpm deploy:production
 
 ⚠️ Running this command will deploy to AWS. Please make sure this is what you intend and beware of unintentional usage.
 
+## Contributing
+
+Feel free to open a PR, file an issue. I'll happily look into it.
+
 ### Remote Caching
 
 See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching) for more info.
@@ -107,11 +111,11 @@ curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" 
 
 These are a list of features in the pipeline:
 
-- [ ] documentation and working example on deployment process.
 - [ ] documentation and guidelines on how to add a new api or service.
-- [ ] automatic changelog generation and release of packages with changesets
+- [ ] automatic changelog generation and release of packages with `changesets`.
 - [ ] auto-linting and formatting on save for faster development.
 - [ ] automatic deployment when merging to main.
+- [ ] website for documentation.
 
 ## Inspiration
 
