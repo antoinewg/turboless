@@ -1,6 +1,8 @@
-# Turborepo starter with pnpm for serverless
+# Turboless 🐠
 
 This is an unofficial starter turborepo for serverless + typescript.
+
+Don't be fooled by it's name, it's simply a contraction of `turborepo` and `serverless`.
 
 ## What's inside?
 
