@@ -14,11 +14,13 @@
     "lint:fix": "eslint '**/*.ts' --fix",
     "package": "serverless package"
   },
+  "dependencies": {
+    "helpers": "workspace:*",
+    "lodash.capitalize": "^4.2.1"
+  },
   "devDependencies": {
+    "@types/lodash.capitalize": "^4.2.7",
     "eslint": "^8.36.0",
     "tsconfig": "workspace:*"
-  },
-  "dependencies": {
-    "helpers": "workspace:*"
   }
 }

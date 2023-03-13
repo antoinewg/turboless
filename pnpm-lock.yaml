@@ -91,12 +91,16 @@ importers:
 
   services/api2:
     specifiers:
+      '@types/lodash.capitalize': ^4.2.7
       eslint: ^8.36.0
       helpers: workspace:*
+      lodash.capitalize: ^4.2.1
       tsconfig: workspace:*
     dependencies:
       helpers: link:../../packages/helpers
+      lodash.capitalize: 4.2.1
     devDependencies:
+      '@types/lodash.capitalize': 4.2.7
       eslint: 8.36.0
       tsconfig: link:../../packages/tsconfig
 
@@ -1801,6 +1805,12 @@ packages:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
       '@types/node': 18.15.1
+    dev: true
+
+  /@types/lodash.capitalize/4.2.7:
+    resolution: {integrity: sha512-NKtwU9vJFCx7Q6RYMAKQS0Vo2QUF81tyjvfYnhMxw8+ZMj8R4iv2zmLq5ARy28dGXuK0MqqWg45zGRuTnsnFag==}
+    dependencies:
+      '@types/lodash': 4.14.182
     dev: true
 
   /@types/lodash/4.14.182:
@@ -4422,6 +4432,10 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: true
+
+  /lodash.capitalize/4.2.1:
+    resolution: {integrity: sha512-kZzYOKspf8XVX5AvmQF94gQW0lejFVgb80G85bU4ZWzoJ6C03PQg3coYAUpSTpQWelrZELd3XWgHzw4Ck5kaIw==}
+    dev: false
 
   /lodash.defaults/4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}

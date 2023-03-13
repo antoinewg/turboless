@@ -3,6 +3,7 @@ import type { ValidatedAPIGatewayProxyEvent } from "helpers";
 import { middyfy, formatJSONResponse } from "helpers";
 
 import schema from "./schema";
+import capitalize from "lodash.capitalize";
 
 const ciao = async (
   event: ValidatedAPIGatewayProxyEvent<typeof schema>
@@ -10,7 +11,7 @@ const ciao = async (
   await new Promise((res) => setTimeout(res, 500));
 
   return formatJSONResponse({
-    message: `Ciao ${event.body.name} !`,
+    message: `Ciao ${capitalize(event.body.name)} !`,
   });
 };
 

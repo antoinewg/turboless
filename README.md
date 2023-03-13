@@ -71,7 +71,7 @@ See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-cach
 - send first request:
 
 ```bash
-curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}
+curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}'
 ```
 
 ```json
@@ -79,7 +79,7 @@ curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json"
 ```
 
 ```bash
-curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" -d '{"name": "World"}
+curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" -d '{"name": "world"}'
 ```
 
 ```json
