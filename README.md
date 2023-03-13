@@ -15,8 +15,10 @@ Each package is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Services
 
-- `api1`: serverless service to say hello. Run `pnpm dev` to run the offline in offline mode.
-- `api2`: serverless service to say ciao. Run `pnpm dev` to run the offline in offline mode.
+- `api1`: serverless service to say hello.
+- `api2`: serverless service to say ciao.
+
+Run `pnpm dev` to run in offline mode (from the service or the root level).
 
 ### Utilities
 
@@ -26,6 +28,7 @@ This turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 - [Github Actions](https://github.com/features/actions) for CI.
+- [vitest](https://vitest.dev/) for testing.
 
 ### Build
 
@@ -45,6 +48,16 @@ cd my-turborepo
 pnpm run dev
 ```
 
+## Testing
+
+This template uses [vitest](https://vitest.dev/) as a testing framework.
+
+```bash
+cd my-turborepo
+pnpm test       # to run the tests, with coverage
+pnpm test:watch # to run tests in watch mode
+```
+
 ### Remote Caching
 
 See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching) for more info.
@@ -59,17 +72,19 @@ See [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-cach
 
 ```bash
 curl -X POST http://localhost:3000/dev/hello -H "Content-Type: application/json" -d '{"name": "World"}
-> {"message":"Hello World !"}
-
-curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" -d '{"name": "World"}
-> {"message":"Ciao World !"}
 ```
 
-## Testing
+```json
+{ "message": "Hello World !" }
+```
 
-This template uses [vitest](https://vitest.dev/) as a testing framework.
+```bash
+curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" -d '{"name": "World"}
+```
 
-Run `pnpm test:watch` to run tests in watch mode. Otherwise, run `pnpm dev` to launch the whole test suite, with coverage.
+```json
+{ "message": "Ciao World !" }
+```
 
 ## TODO
 
