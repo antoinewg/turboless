@@ -92,6 +92,9 @@ These are a list of features in the pipeline:
 
 - [ ] documentation and working example on deployment process.
 - [ ] documentation and guidelines on how to add a new api or service.
+- [ ] automatic changelog generation and release of packages with changesets
+- [ ] auto-linting and formatting on save for faster development.
+- [ ] automatic deployment when merging to main.
 
 ## Inspiration
 
