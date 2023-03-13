@@ -6,13 +6,12 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
+    "plugin:vitest/recommended",
     "plugin:security/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
-    "jest",
+    "vitest",
     "security",
     "node"
   ],

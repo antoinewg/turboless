@@ -13,12 +13,14 @@
     "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
     "package": "turbo run package"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.27.0",
     "@types/aws-lambda": "^8.10.111",
     "@types/node": "^18.15.1",
+    "@vitest/coverage-c8": "^0.29.2",
     "esbuild": "^0.17.11",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
@@ -27,7 +29,8 @@
     "serverless-offline": "^12.0.4",
     "ts-node": "^10.9.1",
     "turbo": "latest",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.2"
   },
   "engines": {
     "npm": ">=8.0.0",

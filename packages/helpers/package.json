@@ -4,6 +4,10 @@
   "private": true,
   "main": "index.ts",
   "types": "index.ts",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
   "dependencies": {
     "@middy/core": "^4.2.6",
     "@middy/http-json-body-parser": "^4.2.6"

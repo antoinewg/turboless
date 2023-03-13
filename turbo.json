@@ -18,6 +18,7 @@
         "test/**/*.ts"
       ]
     },
+    "test:watch": {},
     "lint": {},
     "lint:fix": {},
     "dev": {
