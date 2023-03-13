@@ -65,6 +65,19 @@ curl -X POST http://localhost:4000/dev/ciao -H "Content-Type: application/json" 
 > {"message":"Ciao World !"}
 ```
 
+## Testing
+
+This template uses [vitest](https://vitest.dev/) as a testing framework.
+
+Run `pnpm test:watch` to run tests in watch mode. Otherwise, run `pnpm dev` to launch the whole test suite, with coverage.
+
+## TODO
+
+These are a list of features in the pipeline:
+
+- [ ] documentation and working example on deployment process.
+- [ ] documentation and guidelines on how to add a new api or service.
+
 ## Inspiration
 
 [Initial issue](https://github.com/vercel/turbo/issues/221).
