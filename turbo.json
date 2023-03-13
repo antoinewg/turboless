@@ -31,7 +31,8 @@
         "build",
         "test",
         "lint"
-      ]
+      ],
+      "cache": false
     }
   }
 }
