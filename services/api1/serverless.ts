@@ -8,7 +8,7 @@ const serverlessConfiguration: AWS = {
   plugins: ["serverless-esbuild", "serverless-offline"],
   provider: {
     name: "aws",
-    runtime: "nodejs16.x",
+    runtime: "nodejs18.x",
     stage: "dev",
     region: "eu-central-1",
     environment: {
@@ -25,7 +25,7 @@ const serverlessConfiguration: AWS = {
       minify: false,
       sourcemap: true,
       exclude: ["aws-sdk"],
-      target: "node16",
+      target: "node18",
       define: { "require.resolve": undefined },
       platform: "node",
       concurrency: 10,
