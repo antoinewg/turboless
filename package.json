@@ -21,20 +21,20 @@
     "package": "turbo run package"
   },
   "devDependencies": {
-    "@serverless/typescript": "^3.27.0",
-    "@types/aws-lambda": "^8.10.111",
-    "@types/node": "^18.15.1",
-    "@vitest/coverage-c8": "^0.29.2",
-    "esbuild": "^0.17.11",
+    "@serverless/typescript": "^3.29.0",
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.11",
+    "@vitest/coverage-c8": "^0.29.8",
+    "esbuild": "^0.17.15",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
-    "serverless": "^3.28.1",
-    "serverless-esbuild": "^1.39.0",
+    "serverless": "^3.29.0",
+    "serverless-esbuild": "^1.43.0",
     "serverless-offline": "^12.0.4",
     "ts-node": "^10.9.1",
     "turbo": "latest",
-    "typescript": "^4.9.5",
-    "vitest": "^0.29.2"
+    "typescript": "^5.0.3",
+    "vitest": "^0.29.8"
   },
   "engines": {
     "npm": ">=8.0.0",
