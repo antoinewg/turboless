@@ -1,13 +1,10 @@
-import type { APIGatewayProxyResult } from "aws-lambda";
-import type { ValidatedAPIGatewayProxyEvent } from "helpers";
+import type { CustomHandler } from "helpers";
 import { middyfy, formatJSONResponse } from "helpers";
 
-import schema from "./schema";
+import { bodySchema, schema } from "./schema";
 import capitalize from "lodash.capitalize";
 
-const ciao = async (
-  event: ValidatedAPIGatewayProxyEvent<typeof schema>
-): Promise<APIGatewayProxyResult> => {
+const ciao: CustomHandler<typeof bodySchema, null, null> = async (event) => {
   await new Promise((res) => setTimeout(res, 500));
 
   return formatJSONResponse({
@@ -15,4 +12,4 @@ const ciao = async (
   });
 };
 
-export const main = middyfy(ciao);
+export const main = middyfy(ciao, schema);

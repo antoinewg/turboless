@@ -1,12 +1,9 @@
-import type { APIGatewayProxyResult } from "aws-lambda";
-import type { ValidatedAPIGatewayProxyEvent } from "helpers";
+import type { CustomHandler } from "helpers";
 import { middyfy, formatJSONResponse } from "helpers";
 
-import schema from "./schema";
+import { bodySchema, schema } from "./schema";
 
-const hello = async (
-  event: ValidatedAPIGatewayProxyEvent<typeof schema>
-): Promise<APIGatewayProxyResult> => {
+const hello: CustomHandler<typeof bodySchema> = async (event) => {
   await new Promise((res) => setTimeout(res, 500));
 
   return formatJSONResponse({
@@ -14,4 +11,4 @@ const hello = async (
   });
 };
 
-export const main = middyfy(hello);
+export const main = middyfy(hello, schema);
