@@ -7,15 +7,15 @@
     "check:updates:u": "npx npm-check-updates -u && pnpm i"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-vitest": "^0.0.54",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vitest": "^0.3.22",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-security": "^1.7.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
-    "typescript": "^4.9.5"
+    "eslint-plugin-security": "^2.1.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.13.0",
+    "typescript": "^5.3.3"
   },
   "publishConfig": {
     "access": "public"

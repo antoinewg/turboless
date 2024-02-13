@@ -11,11 +11,11 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@middy/core": "^4.2.6",
-    "@middy/http-json-body-parser": "^4.2.6"
+    "@middy/core": "^5.2.4",
+    "@middy/http-json-body-parser": "^5.2.4"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.111",
-    "json-schema-to-ts": "^2.7.2"
+    "@types/aws-lambda": "^8.10.133",
+    "json-schema-to-ts": "^3.0.0"
   }
 }
