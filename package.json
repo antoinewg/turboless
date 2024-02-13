@@ -32,13 +32,15 @@
     "serverless-esbuild": "^1.51.0",
     "serverless-offline": "^13.3.3",
     "ts-node": "^10.9.2",
-    "turbo": "latest",
+    "turbo": "^1.12.3",
     "typescript": "^5.3.3",
     "vitest": "^1.2.2"
   },
   "engines": {
-    "npm": ">=8.0.0",
-    "node": ">=16.0.0"
+    "node": ">=18",
+    "pnpm": ">=8",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   },
   "packageManager": "pnpm@8.0.0",
   "dependencies": {
