@@ -93,6 +93,9 @@ importers:
       '@middy/http-json-body-parser':
         specifier: ^5.2.4
         version: 5.2.4
+      '@middy/util':
+        specifier: ^5.2.4
+        version: 5.2.4
     devDependencies:
       '@types/aws-lambda':
         specifier: ^8.10.133
@@ -1554,6 +1557,11 @@ packages:
 
   /@middy/http-json-body-parser@5.2.4:
     resolution: {integrity: sha512-+CDr1WnbEKY/korgLnfxFSuMwgxqXM4uSodblN43Y9UzbArP+1OMpKYOnw3N2lLe26iA4CIO33V4hu8tUU5QzQ==}
+    engines: {node: '>=18'}
+    dev: false
+
+  /@middy/util@5.2.4:
+    resolution: {integrity: sha512-1nwMlgOIBk6lT+PKFYuIYB9E+VlP8TTwthCK3snuuMsXCuaPlbZaQc4SqIWAeH/IcGP4aYjKRYUa18YJQBn6bQ==}
     engines: {node: '>=18'}
     dev: false
 

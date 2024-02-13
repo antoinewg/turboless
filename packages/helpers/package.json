@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@middy/core": "^5.2.4",
+    "@middy/util": "^5.2.4",
     "@middy/http-json-body-parser": "^5.2.4"
   },
   "devDependencies": {
