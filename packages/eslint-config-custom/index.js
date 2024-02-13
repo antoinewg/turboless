@@ -1,18 +1,15 @@
 module.exports = {
   "root": true,
   "extends": [
-    "plugin:you-dont-need-lodash-underscore/compatible",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:vitest/recommended",
-    "plugin:security/recommended"
+    "plugin:vitest/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
     "vitest",
-    "security",
     "node"
   ],
   "rules": {
@@ -29,7 +26,6 @@ module.exports = {
     "@typescript-eslint/semi": "warn",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/no-namespace": "warn",
-    "security/detect-object-injection": "warn",
     "no-var": "error",
     "no-console": "warn",
     "camelcase": "off",

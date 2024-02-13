@@ -1,6 +1,6 @@
 import type { AWS } from "@serverless/typescript";
 
-import schema from "./hello/schema";
+import { bodySchema } from "./hello/schema";
 
 export const functions: AWS["functions"] = {
   hello: {
@@ -15,7 +15,7 @@ export const functions: AWS["functions"] = {
           cors: true,
           request: {
             schemas: {
-              "application/json": schema,
+              "application/json": bodySchema,
             },
           },
         },
