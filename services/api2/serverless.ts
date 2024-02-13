@@ -4,11 +4,11 @@ import { functions } from "@functions/index";
 
 const serverlessConfiguration: AWS = {
   service: "api2",
-  frameworkVersion: "3.28.1",
+  frameworkVersion: "3.38.0",
   plugins: ["serverless-esbuild", "serverless-offline"],
   provider: {
     name: "aws",
-    runtime: "nodejs18.x",
+    runtime: "nodejs20.x",
     stage: "dev",
     region: "eu-central-1",
     environment: {
@@ -25,7 +25,7 @@ const serverlessConfiguration: AWS = {
       minify: false,
       sourcemap: true,
       exclude: ["aws-sdk"],
-      target: "node18",
+      target: "node20",
       define: { "require.resolve": undefined },
       platform: "node",
       concurrency: 10,
