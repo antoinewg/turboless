@@ -42,8 +42,5 @@
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm"
   },
-  "packageManager": "pnpm@8.0.0",
-  "dependencies": {
-    "aws-lambda": "^1.0.7"
-  }
+  "packageManager": "pnpm@8.0.0"
 }
