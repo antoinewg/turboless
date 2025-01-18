@@ -26,7 +26,7 @@ const serverlessConfiguration: AWS = {
       minify: false,
       sourcemap: true,
       exclude: ["aws-sdk"],
-      target: "node20",
+      target: "node22",
       define: { "require.resolve": undefined },
       platform: "node",
       concurrency: 10,

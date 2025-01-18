@@ -1,6 +1,6 @@
 {
   "name": "turboless",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -22,25 +22,25 @@
   },
   "devDependencies": {
     "@serverless/typescript": "^3.38.0",
-    "@types/aws-lambda": "^8.10.133",
-    "@types/node": "^20.11.17",
-    "@vitest/coverage-v8": "^1.2.2",
-    "esbuild": "^0.20.0",
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.10.7",
+    "@vitest/coverage-v8": "^3.0.2",
+    "esbuild": "^0.24.2",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "serverless": "^3.38.0",
-    "serverless-esbuild": "^1.51.0",
-    "serverless-offline": "^13.3.3",
+    "serverless-esbuild": "^1.54.6",
+    "serverless-offline": "^14.4.0",
     "ts-node": "^10.9.2",
-    "turbo": "^1.12.3",
-    "typescript": "^5.3.3",
-    "vitest": "^1.2.2"
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.2"
   },
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=8",
+    "node": ">=22",
+    "pnpm": ">=9",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@9.15.4"
 }
