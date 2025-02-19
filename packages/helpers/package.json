@@ -11,16 +11,16 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@middy/core": "^5.2.4",
-    "@middy/http-cors": "^5.2.4",
-    "@middy/http-error-handler": "^5.2.4",
-    "@middy/http-event-normalizer": "^5.2.4",
-    "@middy/http-json-body-parser": "^5.2.4",
-    "@middy/util": "^5.2.4",
-    "@middy/validator": "^5.2.4"
+    "@middy/core": "^6.0.0",
+    "@middy/http-cors": "^6.0.0",
+    "@middy/http-error-handler": "^6.0.0",
+    "@middy/http-event-normalizer": "^6.0.0",
+    "@middy/http-json-body-parser": "^6.0.0",
+    "@middy/util": "^6.0.0",
+    "@middy/validator": "^6.0.0"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.133",
-    "json-schema-to-ts": "^3.0.0"
+    "@types/aws-lambda": "^8.10.147",
+    "json-schema-to-ts": "^3.1.1"
   }
 }
