@@ -2,7 +2,7 @@
   "name": "turboless",
   "version": "1.1.2",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "workspaces": [
     "packages/*",
     "services/*"

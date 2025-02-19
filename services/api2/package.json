@@ -2,7 +2,7 @@
   "name": "api2",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "serverless offline start",
     "check:updates": "npx npm-check-updates",
