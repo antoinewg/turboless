@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@serverless/typescript':
-        specifier: ^3.38.0
-        version: 3.38.0
       '@types/aws-lambda':
         specifier: ^8.10.147
         version: 8.10.147
@@ -1288,9 +1285,6 @@ packages:
   '@serverless/platform-client@4.5.1':
     resolution: {integrity: sha512-XltmO/029X76zi0LUFmhsnanhE2wnqH1xf+WBt5K8gumQA9LnrfwLgPxj+VA+mm6wQhy+PCp7H5SS0ZPu7F2Cw==}
     engines: {node: '>=10.0'}
-
-  '@serverless/typescript@3.38.0':
-    resolution: {integrity: sha512-2AZ7SwWNMOfe2sovoBf68FgiQlLH+RuS9MdSMAzXJ/Hx5d0tPZmmLxfUieF7gUGOExe/fhzCAW3akr6wTZuTpQ==}
 
   '@serverless/utils@6.15.0':
     resolution: {integrity: sha512-7eDbqKv/OBd11jjdZjUwFGN8sHWkeUqLeHXHQxQ1azja2IM7WIH+z/aLgzR6LhB3/MINNwtjesDpjGqTMj2JKQ==}
@@ -5912,8 +5906,6 @@ snapshots:
       - debug
       - supports-color
       - utf-8-validate
-
-  '@serverless/typescript@3.38.0': {}
 
   '@serverless/utils@6.15.0':
     dependencies:
