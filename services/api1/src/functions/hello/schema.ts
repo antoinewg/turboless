@@ -1,11 +1,4 @@
-export const bodySchema = {
-  type: "object",
-  properties: {
-    name: { type: "string" },
-  },
-  required: ["name"],
-  additionalProperties: false,
-} as const;
+import bodySchema from "./schema.json";
 
 export const schema = {
   type: "object",
