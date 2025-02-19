@@ -1,0 +1,12 @@
+ciao:
+  handler: src/functions/ciao/handler.main
+  description: Lambda function to say ciao
+  memorySize: 256
+  events:
+    - http:
+        method: post
+        path: ciao
+        cors: true
+        request:
+          schemas:
+            application/json: ${file(src/functions/ciao/schema.json)}
