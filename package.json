@@ -1,6 +1,6 @@
 {
   "name": "turboless",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -41,6 +41,5 @@
     "pnpm": ">=9",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm"
-  },
-  "packageManager": "pnpm@9.15.4"
+  }
 }
